@@ -4,7 +4,7 @@ name:               ghc-cabal-demo
 version:            0.1.0.0
 license:            BSD-3-Clause
 license-file:       LICENSE
-author:             FirstName LastName
+author:             FirstName Lastname
 maintainer:         firstname.lastname@my.org
 build-type:         Simple
 extra-doc-files:    CHANGELOG.md
