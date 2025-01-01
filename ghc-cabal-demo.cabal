@@ -1,0 +1,33 @@
+cabal-version:      3.14
+
+name:               ghc-cabal-demo
+version:            0.1.0.0
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Rajkumar Natarajan
+maintainer:         rajkumar.natarajan@ekata.com
+build-type:         Simple
+extra-doc-files:    CHANGELOG.md
+common warnings
+    ghc-options: -Wall
+
+library ghc-cabal-demo-lib
+    build-depends:    base ^>=4.20.0.0
+    hs-source-dirs:   lib
+    exposed-modules:  BasicSum
+    default-language: GHC2021
+
+executable ghc-cabal-demo
+    import:           warnings
+    main-is:          Main.hs
+    build-depends:    base ^>=4.20.0.0
+    hs-source-dirs:   app
+    default-language: GHC2021
+
+test-suite tests
+    import:           warnings
+    type:             exitcode-stdio-1.0
+    main-is:          BasicSumTest.hs
+    build-depends:    base ^>=4.20.0.0, HUnit ^>=1.6.2.0, ghc-cabal-demo-lib
+    hs-source-dirs:   tests
+    default-language: GHC2021
