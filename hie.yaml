@@ -1,0 +1,4 @@
+cradle:
+  cabal:
+    - path: "app/Main.hs"
+      component: "ghc-cabal2021-demo:exe:ghc-cabal2021-demo"
