@@ -1,4 +1,10 @@
 cradle:
   cabal:
     - path: "app/Main.hs"
-      component: "ghc-cabal2021-demo:exe:ghc-cabal2021-demo"
+      component: "ghc-cabal-demo:exe:ghc-cabal-demo"
+
+    - path: "lib"
+      component: "ghc-cabal-demo:lib:ghc-cabal-demo-lib"
+
+    - path: "tests"
+      component: "ghc-cabal-demo:test:tests"
